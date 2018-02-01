@@ -1,0 +1,39 @@
+﻿ body{
+        background-color: #FFFFFF;
+    }
+    #menu{
+        width: 100%;
+    }
+    ul {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20%;
+    padding-right: 10%;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: Megrim, cursive;
+    top: 0;
+    z-index: 9999;
+    width: inherit;
+}
+
+li {
+    float:right;
+    display:inline-block;
+}
+
+li h1{
+    font-family: Megrim, cursive;
+    font-size:45px;
+    color: #4BB3FD;
+}
+
+li a{
+    display: inline-block;
+    color: #4BB3FD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}

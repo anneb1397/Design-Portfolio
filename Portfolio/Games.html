@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Games</title>
+    <link rel="stylesheet" href="Base.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Almendra|Asul|Marcellus+SC|Megrim|Overlock+SC" rel="stylesheet">
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li style="float:left"><h1>Anne Barrett</h1></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="Home.html" ">Home</a></li>
+        </ul>
+    </div>
+
+    <div id="games">
+        <table id="spaces">
+            <tr>
+                <td><button class="gametile">Mage the Slayer</button></td>
+                <td><button class="gametile" onclick="location.href='Hunt.html'">The Hunt</button></td>
+            </tr>
+            <tr>
+                <td><button class="gametile">Moon Door</button></td>
+                <td><button class="gametile">Geodefender</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+<style>
+    table {
+        padding: 10%;
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        border-spacing: 2em;
+    }
+    tr{
+        padding: 20px;
+    }
+
+    .gametile{
+        border-style: ridge;
+        font-size: x-large;
+        width: 15em;
+        height: 10em;
+        cursor: pointer;
+    }
+    
+</style>
