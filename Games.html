@@ -22,12 +22,61 @@
     <div id="games">
         <table id="spaces">
             <tr>
-                <td><button class="gametile">Mage the Slayer</button></td>
-                <td><button class="gametile" onclick="location.href='Hunt.html'">The Hunt</button></td>
+                <td>
+                    <button class="gametile">
+                        <img src="Images/MageTheSlayer.png" />
+                        <div class="overlay">
+                            <div class="text">
+                                3D puzzle and combat game
+                            </div>
+                        </div>
+                    </button>
+                </td>
+                <td>
+                    <button class="gametile" onclick="location.href='Hunt.html'">
+                        <div class="overlay">
+                            <div class="text">
+                                Interactive Fiction
+                            </div>
+                        </div>
+                    </button>
+                </td>
+            </tr>
+            <tr class="textrow">
+                <td>
+                    Mage the Slayer
+                </td>
+                <td>
+                    The Hunt
+                </td>
             </tr>
             <tr>
-                <td><button class="gametile">Moon Door</button></td>
-                <td><button class="gametile">Geodefender</button></td>
+                <td>
+                    <button class="gametile">
+                        <div class="overlay">
+                            <div class="text">
+                                2D Game of Thrones themed platform fighting game
+                            </div>
+                        </div>
+                    </button>
+                </td>
+                <td>
+                    <button class="gametile">
+                        <div class="overlay">
+                            <div class="text">
+                                2D Arcade
+                            </div>
+                        </div>
+                    </button>
+                </td>
+            </tr>
+            <tr class="textrow">
+                <td>
+                    Moon Door
+                </td>
+                <td>
+                    GeoDefender
+                </td>
             </tr>
         </table>
     </div>
@@ -36,22 +85,53 @@
 
 <style>
     table {
-        padding: 10%;
+        padding-top: 7%;
         width: 75%;
         margin: 0 auto;
         text-align: center;
-        border-spacing: 2em;
-    }
-    tr{
-        padding: 20px;
+        border-spacing: 1em;
     }
 
-    .gametile{
-        border-style: ridge;
+    .gametile {
+        border-style: none;
         font-size: x-large;
-        width: 15em;
+        width: 25em;
         height: 10em;
         cursor: pointer;
+        position: relative;
+        background-color: transparent;
     }
-    
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+    }
+
+    .gametile:hover .overlay {
+        opacity: 0.85;
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
 </style>

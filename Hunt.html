@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Almendra|Asul|Marcellus+SC|Megrim|Overlock+SC" rel="stylesheet">
+    <script src="games.js"></script>
 </head>
 <body>
     <div id="menu">
@@ -20,12 +21,73 @@
         </ul>
     </div>
 
-    <button class="PlayGame" onclick="location.href='Release/play.html'">Play The Hunt</button>
+    <div class="container">
+        <div class="intro">
+            <h1>
+                The Hunt
+            </h1>
+            <p>
+                The Hunt is an interactive fiction game made with Inform7. The game focuses on the actions of a deadly assassin searching for their target in the dark streets of the city.
+                Opportunities abound in the city streets, and every decision can impact the outcome of the game. Each choice you make could lead you one step closer to finishing your Hunt, but be warned,
+                darkness is your only friend in this city...
+            </p>
+        </div>
+
+        <div class="gameBasics">
+            <div class="slideshow">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9nomvfBDGzG0H5u8Bf1pofAjFn7B0R4iQe3ZQ8-ahdd-FH9geOg" />
+            </div>
+            <div class="gameInfo">
+                <div class="infoText">
+                    <h2>Game Info</h2>
+                    <div class="infoTemplate">
+                        <p>Players: </p>
+                        <p>Input Method: </p>
+                        <p>System: </p>
+                        <p>Language: </p>
+                        <br />
+                    </div>
+
+                    <div class="infoAnswers">
+                        <p>1</p>
+                        <p>Keyboard</p>
+                        <p>Inform7</p>
+                        <p>Inform7</p>
+                        <br />
+                    </div>
+
+
+                    <button class="PlayGame" onclick="location.href='Release/play.html'">Play The Hunt</button>
+                </div>
+            </div>
+
+            <div class="gameDesignBlock">
+
+                <ul>
+                    <li><button class="designButton" onclick="changeDesignBlock(0)">Background</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(1)">Code</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(2)">Story</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(3)">Walkthrough</button></li>
+                </ul>
+                <div class="designInfo">
+                    <div class="backgroundInfo">
+                        <p>I made this game as a homework assignment in a Game Development class my sophomore year of college.</p>
+                    </div>
+                    <div class="codeInfo" style="display:none">
+                        <p>code</p>
+                    </div>
+                    <div class="storyInfo" style="display:none">
+                        <p>story</p>
+                    </div>
+                    <div class="walkthroughInfo" style="display:none">
+                        <p>walkthrough</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
-
-<style>
-    .PlayGame{
-        padding: 20%;
-    }
-</style>

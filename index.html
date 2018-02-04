@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Anne Barrett</title>
 
+    <link rel="stylesheet" href="Base.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Almendra|Asul|Marcellus+SC|Megrim|Overlock+SC" rel="stylesheet">
@@ -18,87 +19,44 @@
             <li><a href="index.html" ">Home</a></li>
         </ul>
     </div>
-    
-        <div id="hi">
-            <h1>Hi, I'm Anne.</h1>
-            <p>Game Designer and Developer</p>
-            <button onclick="location.href='Games.html'">See My Work</button>
-        </div>
+
+    <div id="hi">
+        <h1>Hi, I'm Anne.</h1>
+        <p>Game Designer and Developer</p>
+        <button onclick="location.href='Games.html'">See My Work</button>
+    </div>
 
 </body>
 </html>
 
 <style>
-    body{
-        background-color: #FFFFFF;
+    #hi {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        margin: 0;
+        background-color: transparent;
     }
-    #menu{
-        width: 100%;
-    }
-    ul {
-    position: fixed;
-    list-style-type: none;
-    margin: 0;
-    padding-left: 20%;
-    padding-right: 10%;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.5);
-    font-family: Megrim, cursive;
-    top: 0;
-    z-index: 9999;
-    width: inherit;
-}
 
-li {
-    float:right;
-    display:inline-block;
-}
+        #hi h1 {
+            text-align: center;
+            font-family: Overlock SC;
+        }
 
-li h1{
-    font-family: Megrim, cursive;
-    font-size:45px;
-    color: #4BB3FD;
-}
+        #hi p {
+            text-align: left;
+            font-family: Asul;
+        }
 
-li a{
-    display: inline-block;
-    color: #4BB3FD;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-
-#hi{
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    margin: 0;
-    background-color: transparent;
-    
-}
-
-#hi h1{
-    text-align: center;
-    font-family: Overlock SC;
-}
-
-#hi p{
-    text-align:left;
-    font-family: Asul;
-}
-
-#hi button{
-    position: center;
-    text-align:  center;
-    text-decoration: none;
-    font-family: Asul;
-    width: 100%;
-    font-size: larger;
-    border-style: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
+        #hi button {
+            position: center;
+            text-align: center;
+            text-decoration: none;
+            font-family: Asul;
+            width: 100%;
+            font-size: larger;
+            border-style: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 </style>

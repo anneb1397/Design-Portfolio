@@ -1,10 +1,13 @@
-﻿ body{
-        background-color: #FFFFFF;
-    }
-    #menu{
-        width: 100%;
-    }
-    ul {
+﻿body {
+    background-color: #FFFFFF;
+    color: #333745;
+}
+
+#menu {
+    width: 100%;
+}
+
+ul {
     position: fixed;
     list-style-type: none;
     margin: 0;
@@ -19,21 +22,133 @@
 }
 
 li {
-    float:right;
-    display:inline-block;
-}
-
-li h1{
-    font-family: Megrim, cursive;
-    font-size:45px;
-    color: #4BB3FD;
-}
-
-li a{
+    float: right;
     display: inline-block;
-    color: #4BB3FD;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 30px;
 }
+
+    li h1 {
+        font-family: Megrim, cursive;
+        font-size: 52px;
+        color: #4BB3FD;
+    }
+
+    li a {
+        display: inline-block;
+        color: #4BB3FD;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 35px;
+    }
+
+.PlayGame {
+}
+
+.container {
+    width: 100%;
+    padding: 10%;
+    padding-top: 5%;
+}
+
+.intro h1 {
+    font-family: 'Overlock SC';
+}
+
+.gameBasics {
+    padding-top: 1em;
+}
+
+.slideshow {
+    float: left;
+    width: 45%;
+    height: 30em;
+}
+
+    .slideshow img {
+        width: 100%;
+        height: 100%;
+    }
+
+.gameInfo {
+    width: 35%;
+    float: right;
+    margin-left: 20%;
+    height: 100%;
+}
+
+    .gameInfo h2 {
+        font-family: 'Overlock SC';
+    }
+
+.infoText {
+    text-align: left;
+}
+
+.infoTemplate {
+    width: 50%;
+    float: left;
+}
+
+    .infoTemplate p {
+        line-height: 1em;
+    }
+
+.infoAnswers {
+    width: 50%;
+    float: right;
+}
+
+    .infoAnswers p {
+        line-height: 1em;
+    }
+
+.gameDesignBlock {
+    margin-top: 32%;
+    padding-top: 5em;
+    width: 100%;
+}
+
+    .gameDesignBlock ul {
+        position: relative;
+        width: 100%;
+        background-color: #086788;
+        color: white;
+        margin: 0;
+    }
+
+    .gameDesignBlock li {
+        border-right: thin;
+        float: left;
+        display: inline-block;
+        text-align: center;
+        padding-right: 10%;
+        font-family: 'Overlock SC';
+    }
+
+        .gameDesignBlock li:last-child {
+            border-right: none;
+        }
+
+.designButton {
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+    .designButton:focus {
+        outline: 0;
+    }
+
+.designInfo {
+    height: 100%;
+    border: inset;
+    background-color: #D9F0FF;
+}
+
+    .designInfo div {
+        width: inherit;
+        height: inherit;
+    }
