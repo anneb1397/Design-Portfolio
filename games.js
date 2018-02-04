@@ -8,20 +8,20 @@ function changeDesignBlock(index) {
     switch (index) {
         case 0:
             //Display background
-            document.getElementsByClassName("backgroundInfo")[0].style.display = "inline";
+            document.getElementsByClassName("backgroundInfo")[0].style.display = "inherit";
 
             break;
         case 1:
             //Display code
-            document.getElementsByClassName("codeInfo")[0].style.display = "inline";
+            document.getElementsByClassName("codeInfo")[0].style.display = "inherit";
             break;
         case 2:
             //display story
-            document.getElementsByClassName("storyInfo")[0].style.display = "inline";
+            document.getElementsByClassName("storyInfo")[0].style.display = "inherit";
             break;
         case 3:
             //display walkthrough
-            document.getElementsByClassName("walkthroughInfo")[0].style.display = "inline";
+            document.getElementsByClassName("walkthroughInfo")[0].style.display = "inherit";
             break;
     }
 }

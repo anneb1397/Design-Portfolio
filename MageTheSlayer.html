@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Mage The Slayer</title>
+
+    <link rel="stylesheet" href="Base.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Almendra|Asul|Marcellus+SC|Megrim|Overlock+SC" rel="stylesheet">
+    <script src="games.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li style="float:left"><h1>Anne Barrett</h1></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h1>
+                Mage The Slayer
+                <button class="titleButton" onclick="location.href='Hunt.html'">next <i class="fa fa-caret-right"></i></button>
+            </h1>
+            <p>
+                Mage The Slayer is a 3D puzzle and fighting game. The goal of the game is to find as many of the hidden spells as possible before time runs out and then use the spells found
+                to defeat a demon which has slaughtered the character's entire school. 
+            </p>
+        </div>
+
+        <div class="gameBasics">
+            <div class="slideshow">
+                <img src="Images/MageTheSlayer.png" />
+            </div>
+            <div class="gameInfo">
+                <div class="infoText">
+                    <h2>Game Info</h2>
+                    <div class="infoTemplate">
+                        <p>Players: </p>
+                        <p>Input Method: </p>
+                        <p>Engine: </p>
+                        <p>Engine Version: </p>
+                        <p>Language: </p>
+                        <br />
+                    </div>
+
+                    <div class="infoAnswers">
+                        <p>1</p>
+                        <p>Xbox 360 Controller</p>
+                        <p>Unity3D</p>
+                        <p>2017.1.1</p>
+                        <p>C#</p>
+                        <br />
+                    </div>
+
+
+                    <button class="PlayGame"><a href="MageTheSlayer.zip" download>Download Game</a></button>
+                </div>
+            </div>
+
+            <div class="gameDesignBlock">
+
+                <ul>
+                    <li><button class="designButton" onclick="changeDesignBlock(0)">Background</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(1)">Code</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(2)">Story</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(3)">Walkthrough</button></li>
+                </ul>
+                <div class="designInfo">
+                    <div class="backgroundInfo">
+                        <p>Mage The Slayer was designed and developed by myself and two other Northwestern students as a final project for EECS 370: Game Design and Development. We spent five weeks on the project 
+                        from start to finish, using free assets from the Unity Asset Store to populate our scenes and save time as the team background was heavily computer science.</p>
+                        <p style="display:none">Since the completion of the course, I have been improving and expanding the game to incorporate a broader narrative and better user experience. One of the primary concerns players had from the game
+                        was that the controls were too difficult to manage and the fighting sequence seemed impossible to win. To address these, I completely revamped the user controls and "dumbed down" enemy AI.</p>
+                    </div>
+                    <div class="codeInfo" style="display:none">
+                        <p>One of the primary fears we had going into this project was the sheer amount of coding we would need to write and fine tune in five weeks. Of course, when is that not the case?</p>
+                        <p>Since I was the most experienced with Unity, the heavier and more intensive parts of our project fell to me. I was responsible for creating the enemy AI behavior, the character attacks, and
+                        designing any and all of the underlying systems we would need.</p>
+                        <p>Designing the systems for acquiring and using spells definitely became one of my favorite parts of the project. Mage the Slayer centers around the player's ability to collect spells for the final fight, so it was vital 
+                        that the game knew what spells had been acquired and how powerful the character was becoming. Designing the connections between scripts and objects to reflect that was both challenging and highly rewarding. For me, it felt like
+                         I was getting my first real taste of what game development can be.</p>
+                    </div>
+                    <div class="storyInfo" style="display:none">
+                        <p>story</p>
+                    </div>
+                    <div class="walkthroughInfo" style="display:none">
+                        <p>walkthrough</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
