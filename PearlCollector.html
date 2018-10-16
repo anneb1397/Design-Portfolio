@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Pearl Collector</title>
+
+    <link rel="stylesheet" href="Base.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Almendra|Asul|Marcellus+SC|Megrim|Overlock+SC" rel="stylesheet">
+    <script src="games.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li style="float:left"><h1>Anne Barrett</h1></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h1>
+
+                Pearl Collector
+
+                <button class="titleButton" onclick="location.href='Quintessence.html'">next <i class="fa fa-caret-right"></i></button>
+
+                <button class="titleButton" onclick="location.href='Hunt.html'"> <i class="fa fa-caret-left"></i> previous</button>
+            </h1>
+            <p>
+                This simple under the sea adventure challenges your character to collect all the pearls without running into the pink pufferfish! Watch out, they have a nasty bite!
+            </p>
+        </div>
+
+        <div class="gameBasics">
+            <div class="slideshow">
+                <img src="Images/pearl1.jpg" />
+            </div>
+            <div class="gameInfo">
+                <div class="infoText">
+                    <h2>Game Info</h2>
+                    <div class="infoTemplate">
+                        <p>Players: </p>
+                        <p>Input Method: </p>
+                        <p>Language: </p>
+                        <p>Github: </p>
+                        <br />
+                    </div>
+
+                    <div class="infoAnswers">
+                        <p>1</p>
+                        <p>Keyboard</p>
+                        <p>x86 Assmebly</p>
+                        <a href="https://github.com/anneb1397/EECS-205" target="_blank">Pearl Collector</a>
+                        <br />
+                    </div>
+
+
+                    <button class="PlayGame"><a href="https://drive.google.com/file/d/1aGHFjiS1yLZ7ndpDy3q9v5PZJb5jL_Uo/view?usp=sharing" target="_blank">Download Game</a></button>
+                </div>
+            </div>
+
+            <div class="gameDesignBlock" style="display:none">
+
+                <ul>
+                    <li><button class="designButton" onclick="changeDesignBlock(0)">Background</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(1)">Code</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(2)">Story</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(3)">Walkthrough</button></li>
+                </ul>
+                <div class="designInfo">
+                    <div class="backgroundInfo">
+                        <p>
+                           My final project for EECS 205 at Northwestern, Introduction to Computer System Software, this game is made entirely in x86 assembly language.
+                        </p>
+                        <p style="display:none">
+                        
+                        </p>
+                    </div>
+                    <div class="codeInfo" style="display:none">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="storyInfo" style="display:none">
+                        <p>story</p>
+                    </div>
+                    <div class="walkthroughInfo" style="display:none">
+                        <p>walkthrough</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

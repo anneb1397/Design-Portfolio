@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Quintessence</title>
+
+    <link rel="stylesheet" href="Base.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Almendra|Asul|Marcellus+SC|Megrim|Overlock+SC" rel="stylesheet">
+    <script src="games.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li style="float:left"><h1>Anne Barrett</h1></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h1>
+
+                Quintessence
+
+                <button class="titleButton" onclick="location.href='MageTheSlayer.html'">next <i class="fa fa-caret-right"></i></button>
+
+                <button class="titleButton" onclick="location.href='PearlCollector.html'"> <i class="fa fa-caret-left"></i> previous</button>
+            </h1>
+            <p>
+                A combination of platformer, RPG and puzzle games, Quinetessence features a rogue AI with the capability of taking on the properties of other objects! Able to manipulate her surroundings, the AI seeks an escape from the 
+                lab of its creators, but enemies and monsters stand in her way.
+            </p>
+        </div>
+
+        <div class="gameBasics">
+            <div class="slideshow">
+                <img src="Images/quint_boss.gif" />
+            </div>
+            <div class="gameInfo">
+                <div class="infoText">
+                    <h2>Game Info</h2>
+                    <div class="infoTemplate">
+                        <p>Players: </p>
+                        <p>Input Method: </p>
+                        <p>Engine: </p>
+                        <p>Engine Version: </p>
+                        <p>Language: </p>
+                        <br />
+                    </div>
+
+                    <div class="infoAnswers">
+                        <p>1</p>
+                        <p>Custom</p>
+                        <p>Unity3D</p>
+                        <p>2018.1.2f</p>
+                        <p>C#</p>
+                        <br />
+                    </div>
+
+
+                    <button class="PlayGame"><a href="https://drive.google.com/file/d/1Y6xWJpe2lFkOmDHljPD-6ndAiClYna1F/view?usp=sharing" target="_blank">Download Game</a></button>
+                </div>
+            </div>
+
+            <div class="gameDesignBlock">
+
+                <ul>
+                    <li><button class="designButton" onclick="changeDesignBlock(0)">Background</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(1)">Code</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(2)">Story</button></li>
+                    <li><button class="designButton" onclick="changeDesignBlock(3)">Walkthrough</button></li>
+                </ul>
+                <div class="designInfo">
+                    <div class="backgroundInfo">
+                        <p>
+                           
+                        </p>
+                    </div>
+                    <div class="codeInfo" style="display:none">
+                        <p>
+                            My personal contribution to the codebase of this project revolved primarily around the RPG aspects of the game. I was responsible for designing and implementing
+                            the levelling system, combat system and the internal skill tree of the player.
+                        </p>
+                        <p>
+                            The combat system was the most significant contribution I made to the project and was the most fun to design. Our original design for this project featured the option of
+                            having multiple types of the same attack, so when designing the combat system, I chose to implement it as an event-based feature.
+                           
+                            Whenever the base ability function was called, a Unity Event was triggered. This meant that any special upgrades or temporary bonuses could be added and removed to the call by modifying the Unity Event. 
+                            It made expansion of the combat system simple and concise, without needing to modify existing features. It also allowed for a more versatile system that could be grown into a powerful combinatory tool. 
+                            It was also important to me that the system performed well. I wanted a fast access time for the ability call, and with multiple abilities with different keys possible, I chose to store the keys being used
+                            and the associated abilities within a dictionary. When a button was pressed, the dictionary accessed the associated ability in constant time and triggered the event.
+                        </p>
+                    </div>
+                    <div class="storyInfo" style="display:none">
+                        <p>story</p>
+                    </div>
+                    <div class="walkthroughInfo" style="display:none">
+                        <p>walkthrough</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

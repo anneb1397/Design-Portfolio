@@ -25,7 +25,9 @@
         <div class="intro">
             <h1>
                 The Hunt
-                <button class="titleButton" onclick="location.href='MageTheSlayer.html'">next <i class="fa fa-caret-right"></i></button>
+                <button class="titleButton" onclick="location.href='PearlCollector.html'">next <i class="fa fa-caret-right"></i></button>
+
+                <button class="titleButton" onclick="location.href='MageTheSlayer.html'"><i class="fa fa-caret-left"></i> previous</button>
             </h1>
             <p>
                 The Hunt is an interactive fiction game made with Inform7. The game focuses on the actions of a deadly assassin searching for their target in the dark streets of the city.
@@ -74,15 +76,73 @@
                     <div class="backgroundInfo">
                         <p>Another game from my time in EECS 371, I created this for a homework assignment. The entire game was split between two assignments over two weeks, and this was my final product.
                          Using Inform7 was a completely new experience and actually my first with interactive fiction at all.</p>
+                        <p>I took inspiration from some of my favorite games and stories like the Assassin's Creed franchise and The Shadowdance series by David Dalglish.</p>
+                        <p>When designing the game, I wanted the player to feel they had options with how their character fit into the world. Was the character a silent, sneaky killer? Were they brutal and looking for a fight? 
+                        Creating the different approaches to successfully beating the game was fun, and when I implemented the story-end, I wanted to really reflect the different paths the player could take.</p>
                     </div>
                     <div class="codeInfo" style="display:none">
-                        <p>code</p>
+                        <p>The Inform7 codebase was unlike anything I had ever done in game development, but once I understand the basic rules and setup, I was able to create the custom behaviors that would make the game unique.</p>
+                        <p>By default, Inform7 does not allow violence, so I had to override and create my own verbs that would allow the player to attack and kill, as assassins generally do.</p>
+                        <p>I implemented the entire game by myself, and have included a few snippets of the more complex elements of the game below:</p>
                     </div>
                     <div class="storyInfo" style="display:none">
-                        <p>story</p>
+                        <p>You are playing as a shadowy assassin hunting your target through the richest parts of the city. Using clues and items found around the streets, you search for your target's home and a way inside.</p>
+                        <p>Guards patrol the area, keeping watching for anything out of place or anyone looking suspicious. The only way to avoid a fight is to stick to the shadows.</p>
                     </div>
                     <div class="walkthroughInfo" style="display:none">
-                        <p>walkthrough</p>
+                        <p>
+                            This walkthrough presents two of the four ways the player can win the game. It does not include finding blackmail or getting a weapon. To find blackmail, explore the world! The weapons available are in the Butcher shop which is locked. To get them, you must find something to unlock the door with. </p>
+                        <p>Weapons offer a huge advantage in the game. If you are approached by a guard, you can fight and kill him. In addition, you will kill Frell with one hit. Depending on what weapon you choose, the end of the story will be different, so pick which one matches the personality you want for your character. </p>
+                        <p>You can also bribe the guard if you have money. But where oh where would you find that?</p>
+                        <p>Keep in mind, if you spend too long in a room with lamps/torches without smothering them or putting them out, guards will find you. Use the hiding places (dark corners, armoires, curtains) to hide yourself from them or just to reset the counter for how long you’ve been in a lit place.</p>
+                        <p>To put out lights, use command smother [light]. If you’re in a hiding place, you should use command exit to get out of it.</p>
+                            <h5 style="font-weight:bold">
+                                Basic walkthrough:
+                            </h5>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;In Main Street South, go east/up/climb ladder. </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Go north. Go west. Go down. Go west. Go down. Go west.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;You are now in the Dining Room.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Louis Frell is in this room. Since you don’t have a weapon, blackmail, or poison, you have no choice but to attack him with your bare hands.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Attack Frell x4 to kill him. Attacking him less than 4 times and doing other actions will result in a loss.
+                        </p>
+                            <h5 style="font-weight:bold">
+                                Poison walkthrough:
+                            </h5>
+                        <p style="font-style:italic"> Note: If you grab the wrong vial from the alchemy shop, you will lose!</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;In Main Street South, go north to Main Street North.</p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Go northeast through the wooden door to enter the Alchemy Shop.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;There are several objects in this room. The three vials in the vial container are what you want. You can only carry one vial at a time. There are clues as to which is the right vial if you examine the vials and the other objects in the room.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Take a vial. <em>Note: this is intentionally vague. Wouldn’t want to give away the poison that easily would we?</em>
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Go southwest to exit the shop.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Go south to Main Street South.
+                            From here, the directions to the house are the same: east, north, west, down, west, down, west.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;You are now in the Dining Room.
+                            You cannot poison the wine glass since Frell will see you, so you should find the wine bottle.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Go north to the Kitchen. The wine bottle is opened in this room. Poison the bottle with vial you took from the alchemy shop.
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Once you’ve done that, the game will end with either a win if you chose correctly or a humiliating loss.
+                        </p>
                     </div>
                 </div>
 
